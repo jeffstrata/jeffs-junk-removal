@@ -63,7 +63,7 @@ export default function TrustSignals() {
         {/* Google Reviews placeholder */}
         <div className="mt-16 bg-gray-50 rounded-xl p-8 text-center">
           <h3 className="text-xl font-bold text-navy mb-2">What Our Customers Say</h3>
-          <p className="text-gray-500 mb-4">Google Reviews coming soon!</p>
+          <p className="text-gray-600 mb-4">Google Reviews coming soon!</p>
           {/* TODO: Embed Google Reviews widget here */}
           <div className="flex justify-center gap-1">
             {[...Array(5)].map((_, i) => (
@@ -72,7 +72,7 @@ export default function TrustSignals() {
               </svg>
             ))}
           </div>
-          <p className="text-gray-400 text-sm mt-2">5-star rated junk removal service</p>
+          <p className="text-gray-500 text-sm mt-2">5-star rated junk removal service</p>
         </div>
       </div>
     </section>

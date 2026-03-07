@@ -51,9 +51,9 @@ export default function Pricing() {
                   MOST COMMON
                 </span>
               )}
-              <h3 className="text-lg font-semibold text-gray-600 mb-2">{tier.label}</h3>
+              <h3 className="text-lg font-semibold text-gray-700 mb-2">{tier.label}</h3>
               <p className="text-3xl font-bold text-navy mb-3">{tier.price}</p>
-              <p className="text-gray-500 text-sm mb-6">{tier.description}</p>
+              <p className="text-gray-600 text-sm mb-6">{tier.description}</p>
               <a href={`tel:${PHONE}`} className="btn-primary w-full text-base py-2">
                 Call for Quote
               </a>
@@ -62,7 +62,7 @@ export default function Pricing() {
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-gray-500">
+          <p className="text-gray-600">
             Not sure about pricing?{' '}
             <Link href="/free-quote/" className="text-accent hover:underline font-semibold">
               Send us details for a free quote

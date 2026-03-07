@@ -50,7 +50,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500 font-medium">Call or Text</p>
+                  <p className="text-sm text-gray-600 font-medium">Call or Text</p>
                   <p className="text-2xl md:text-3xl font-bold text-accent group-hover:text-accent-dark">
                     {PHONE_DISPLAY}
                   </p>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500 font-medium">Email</p>
+                  <p className="text-sm text-gray-600 font-medium">Email</p>
                   <p className="text-lg font-semibold text-navy">{EMAIL}</p>
                 </div>
               </a>
@@ -82,9 +82,9 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 font-medium">Availability</p>
+                    <p className="text-sm text-gray-600 font-medium">Availability</p>
                     <p className="text-lg font-semibold text-navy">Open 7 Days a Week</p>
-                    <p className="text-gray-500 text-sm">Call or text anytime to book</p>
+                    <p className="text-gray-600 text-sm">Call or text anytime to book</p>
                   </div>
                 </div>
               </div>

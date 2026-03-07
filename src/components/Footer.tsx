@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-navy-light mt-10 pt-6 text-center text-sm text-gray-500">
+        <div className="border-t border-navy-light mt-10 pt-6 text-center text-sm text-gray-400">
           <p>&copy; {currentYear} Jeff&apos;s Junk Removal. All rights reserved. Edmonton, Alberta.</p>
         </div>
       </div>

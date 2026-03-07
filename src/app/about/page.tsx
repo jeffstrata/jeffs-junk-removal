@@ -125,17 +125,17 @@ export default function AboutPage() {
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-3xl mb-2">🛻</div>
               <h3 className="font-bold text-navy">Truck Hauling</h3>
-              <p className="text-gray-500 text-sm">For large items and heavy loads</p>
+              <p className="text-gray-600 text-sm">For large items and heavy loads</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-3xl mb-2">📦</div>
               <h3 className="font-bold text-navy">Enclosed Trailer</h3>
-              <p className="text-gray-500 text-sm">Extra capacity for big jobs</p>
+              <p className="text-gray-600 text-sm">Extra capacity for big jobs</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-3xl mb-2">💪</div>
               <h3 className="font-bold text-navy">We Do The Loading</h3>
-              <p className="text-gray-500 text-sm">You point, we lift and load</p>
+              <p className="text-gray-600 text-sm">You point, we lift and load</p>
             </div>
           </div>
         </div>
