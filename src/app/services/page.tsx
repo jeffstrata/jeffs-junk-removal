@@ -13,6 +13,7 @@ const services: { title: string; slug: string; image?: string; description: stri
   {
     title: 'Junk Removal',
     slug: 'junk-removal',
+    image: '/images/junk-removal.jpg',
     description:
       'General junk and clutter removal from homes, offices, and job sites. Whether it\'s a pile in the garage or a room full of stuff you need gone, we\'ll take care of it quickly and affordably.',
     items: ['Household clutter', 'Old boxes & storage', 'Office cleanups', 'Miscellaneous items'],
@@ -20,6 +21,7 @@ const services: { title: string; slug: string; image?: string; description: stri
   {
     title: 'Furniture Removal',
     slug: 'furniture-removal',
+    image: '/images/furniture.jpg',
     description:
       'Got an old couch, mattress, or dining set that needs to go? We\'ll haul away any furniture — no matter the size or weight. We do all the heavy lifting so you don\'t have to.',
     items: ['Couches & sofas', 'Mattresses & bed frames', 'Tables & chairs', 'Desks & dressers', 'Shelving & cabinets'],
@@ -43,6 +45,7 @@ const services: { title: string; slug: string; image?: string; description: stri
   {
     title: 'Basement Cleanouts',
     slug: 'basement-cleanouts',
+    image: '/images/basement.jpg',
     description:
       'Basements tend to become dumping grounds. We\'ll haul away everything from old furniture to boxes of stuff you forgot you had. Get your basement back.',
     items: ['Full basement clearing', 'Flood damage cleanup', 'Storage cleanout', 'Old carpet & flooring removal'],
@@ -50,6 +53,7 @@ const services: { title: string; slug: string; image?: string; description: stri
   {
     title: 'Estate Cleanouts',
     slug: 'estate-cleanouts',
+    image: '/images/estate.jpg',
     description:
       'Compassionate and thorough cleanout services for estates, downsizing, and property transitions. We work efficiently and respectfully to clear entire properties.',
     items: ['Full property cleanouts', 'Downsizing assistance', 'Hoarder cleanups', 'Post-move cleanup'],

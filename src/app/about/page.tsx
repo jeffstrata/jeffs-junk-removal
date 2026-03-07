@@ -123,8 +123,8 @@ export default function AboutPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <div className="bg-gray-50 rounded-xl p-6">
-              <div className="text-3xl mb-2">🚛</div>
-              <h3 className="font-bold text-navy">Heavy-Duty Truck</h3>
+              <div className="text-3xl mb-2">🛻</div>
+              <h3 className="font-bold text-navy">Truck Hauling</h3>
               <p className="text-gray-500 text-sm">For large items and heavy loads</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
