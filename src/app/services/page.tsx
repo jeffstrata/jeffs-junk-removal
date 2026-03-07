@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://jeffsjunkremoval.ca/services/' },
 };
 
-const services = [
+const services: { title: string; slug: string; image?: string; description: string; items: string[] }[] = [
   {
     title: 'Junk Removal',
     slug: 'junk-removal',
@@ -27,6 +27,7 @@ const services = [
   {
     title: 'Appliance Removal',
     slug: 'appliance-removal',
+    image: '/images/appliances.jpg',
     description:
       'Fridges, stoves, washers, dryers, dishwashers, and more. We safely disconnect (non-gas) and remove old appliances. Responsible recycling when possible.',
     items: ['Refrigerators & freezers', 'Stoves & ovens', 'Washers & dryers', 'Dishwashers', 'Water heaters', 'AC units'],
@@ -34,6 +35,7 @@ const services = [
   {
     title: 'Garage Cleanouts',
     slug: 'garage-cleanouts',
+    image: '/images/garage-cleanouts.jpg',
     description:
       'Reclaim your garage space. We\'ll clear out years of accumulated stuff and leave you with a clean, usable space. Fast and thorough — usually done in a single visit.',
     items: ['Complete garage clearing', 'Tool & equipment disposal', 'Storage unit cleanouts', 'Workshop cleanups'],
@@ -55,6 +57,7 @@ const services = [
   {
     title: 'Yard Waste Removal',
     slug: 'yard-waste-removal',
+    image: '/images/yard-waste.jpg',
     description:
       'Branches, leaves, soil, sod, and yard debris cleared fast. Perfect after a landscaping project or seasonal cleanup.',
     items: ['Branches & tree limbs', 'Leaves & grass clippings', 'Soil & sod', 'Garden waste', 'Landscaping debris'],
@@ -62,6 +65,7 @@ const services = [
   {
     title: 'Construction Debris Removal',
     slug: 'construction-debris',
+    image: '/images/construction-debris.jpg',
     description:
       'Post-renovation and construction site cleanup. We handle drywall, lumber, concrete, tile, and all types of construction waste. Great for contractors and homeowners.',
     items: ['Drywall & plaster', 'Lumber & wood', 'Concrete & brick', 'Tile & flooring', 'General reno waste'],
@@ -69,6 +73,7 @@ const services = [
   {
     title: 'Hot Tub Removal',
     slug: 'hot-tub-removal',
+    image: '/images/hot-tub.jpg',
     description:
       'We dismantle and remove hot tubs of all sizes. Our crew breaks them down on-site and hauls everything away. No hot tub is too big or too old.',
     items: ['Complete dismantling', 'Hauling & disposal', 'Site cleanup after removal'],
@@ -76,6 +81,7 @@ const services = [
   {
     title: 'Property Cleanouts',
     slug: 'property-cleanouts',
+    image: '/images/property-cleanouts.jpg',
     description:
       'Full property cleanouts for landlords, property managers, and real estate agents. We clear out everything so the property is ready for new tenants or sale.',
     items: ['Rental property cleanouts', 'Pre-sale property prep', 'Foreclosure cleanouts', 'Abandoned property clearing'],
@@ -83,6 +89,7 @@ const services = [
   {
     title: 'Tenant Move-Out Cleanup',
     slug: 'tenant-cleanup',
+    image: '/images/tenant-cleanup.jpg',
     description:
       'Tenants left stuff behind? We\'ll clear out all abandoned items and debris so your rental is ready to show. Fast turnaround for landlords and property managers.',
     items: ['Abandoned furniture removal', 'Trash & debris clearing', 'Full unit cleanout', 'Quick turnaround available'],
@@ -90,6 +97,7 @@ const services = [
   {
     title: 'Deck & Shed Removal',
     slug: 'deck-shed-removal',
+    image: '/images/deck-shed.jpg',
     description:
       'We tear down and haul away old decks, sheds, playsets, and other outdoor structures. Complete demolition and removal — we leave your yard clean.',
     items: ['Deck demolition & removal', 'Shed teardown & hauling', 'Playset & swing set removal', 'Fence removal'],
@@ -124,14 +132,22 @@ export default function ServicesPage() {
                   index % 2 === 1 ? 'md:flex-row-reverse' : ''
                 }`}
               >
-                {/* Icon placeholder */}
+                {/* Service image */}
                 <div className="w-full md:w-1/3 flex-shrink-0">
-                  <div className="bg-gray-50 rounded-xl p-8 text-center aspect-square flex items-center justify-center">
-                    <div>
-                      <div className="text-5xl mb-2 text-navy font-bold">{service.title.charAt(0)}</div>
-                      <p className="text-gray-400 text-sm">{service.title}</p>
+                  {service.image ? (
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full aspect-square object-cover rounded-xl shadow-md"
+                    />
+                  ) : (
+                    <div className="bg-gray-50 rounded-xl p-8 text-center aspect-square flex items-center justify-center">
+                      <div>
+                        <div className="text-5xl mb-2 text-navy font-bold">{service.title.charAt(0)}</div>
+                        <p className="text-gray-400 text-sm">{service.title}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 {/* Content */}
