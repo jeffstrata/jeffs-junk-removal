@@ -17,7 +17,7 @@ const pricingTiers = [
   },
   {
     label: 'Custom Quote',
-    price: 'Call Us',
+    price: 'Contact Us',
     description: 'Large projects, demolition, estate cleanouts — we\'ll give you a fair price',
     popular: false,
   },
@@ -55,7 +55,7 @@ export default function Pricing() {
               <p className="text-3xl font-bold text-navy mb-3">{tier.price}</p>
               <p className="text-gray-600 text-sm mb-6">{tier.description}</p>
               <a href={`tel:${PHONE}`} className="btn-primary w-full text-base py-2">
-                Call for Quote
+                Call or Text for Quote
               </a>
             </div>
           ))}

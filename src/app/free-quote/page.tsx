@@ -44,7 +44,7 @@ export default function FreeQuotePage() {
                   Call or text us directly and we can often give you a price right away.
                 </p>
                 <a href={`tel:${PHONE}`} className="btn-primary w-full">
-                  Call {PHONE_DISPLAY}
+                  Call or Text {PHONE_DISPLAY}
                 </a>
               </div>
 
