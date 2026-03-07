@@ -40,10 +40,10 @@ const signals = [
 
 export default function TrustSignals() {
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-navy-dark">
       <div className="container-narrow mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Why Choose Jeff&apos;s Junk Removal?
           </h2>
         </div>
@@ -51,11 +51,11 @@ export default function TrustSignals() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {signals.map((signal) => (
             <div key={signal.title} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 text-accent rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 text-accent rounded-full mb-4">
                 {signal.icon}
               </div>
-              <h3 className="text-lg font-bold text-navy mb-2">{signal.title}</h3>
-              <p className="text-gray-600 text-sm">{signal.description}</p>
+              <h3 className="text-lg font-bold text-accent mb-2">{signal.title}</h3>
+              <p className="text-gray-300 text-sm">{signal.description}</p>
             </div>
           ))}
         </div>
