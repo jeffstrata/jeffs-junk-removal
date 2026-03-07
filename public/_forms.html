@@ -1,0 +1,30 @@
+<!--
+  Hidden page for Netlify Forms detection.
+  Netlify needs static HTML forms to register form endpoints.
+  This file is deployed but never linked to from the site.
+-->
+<!DOCTYPE html>
+<html>
+<head><title>Forms</title></head>
+<body>
+  <!-- Contact form -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="phone" />
+    <input name="email" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- Quote form -->
+  <form name="quote" netlify netlify-honeypot="bot-field" enctype="multipart/form-data" hidden>
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="phone" />
+    <input name="email" />
+    <input name="address" />
+    <textarea name="description"></textarea>
+    <input name="photo" type="file" />
+  </form>
+</body>
+</html>
