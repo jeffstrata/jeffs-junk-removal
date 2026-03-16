@@ -29,7 +29,22 @@ export const metadata: Metadata = {
     siteName: "Jeff's Junk Removal",
     title: "Jeff's Junk Removal | Edmonton's Fast & Affordable Junk Hauling",
     description:
-      "Edmonton's trusted junk removal service. Fast, affordable junk hauling. Same-day service available. Call (587) 991-4620.",
+      "Edmonton's trusted junk removal service. Fast, affordable junk hauling. Same-day service available. Call or text (587) 991-4620.",
+    images: [
+      {
+        url: 'https://jeffsjunkremoval.ca/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: "Jeff's Junk Removal - Edmonton Junk Hauling Service",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Jeff's Junk Removal | Edmonton's Fast & Affordable Junk Hauling",
+    description:
+      "Edmonton's trusted junk removal service. Fast, affordable junk hauling. Same-day service available. Call or text (587) 991-4620.",
+    images: ['https://jeffsjunkremoval.ca/og-image.jpg'],
   },
   robots: {
     index: true,
