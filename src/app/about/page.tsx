@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'About Us - Locally Owned Junk Removal',
+  title: 'About Us | Locally Owned Edmonton Junk Removal Service',
   description:
-    "Jeff's Junk Removal is a locally owned and operated junk removal service in Edmonton, Alberta. Fast, reliable, and affordable. Learn more about our story.",
+    "Jeff's Junk Removal is a locally owned and operated junk removal service in Edmonton, Alberta. Fast, reliable, and affordable. Same-day service, responsible disposal, and no hidden fees. Call or text (587) 991-4620.",
   alternates: { canonical: 'https://jeffsjunkremoval.ca/about/' },
 };
 

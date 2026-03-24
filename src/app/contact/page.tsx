@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Junk Removal Edmonton',
+  title: 'Contact Us | Edmonton Junk Removal - Call or Text (587) 991-4620',
   description:
-    "Contact Jeff's Junk Removal in Edmonton. Call (587) 991-4620 for a free quote. Serving Edmonton, Sherwood Park, St. Albert, Spruce Grove & surrounding areas.",
+    "Contact Jeff's Junk Removal in Edmonton for fast, affordable junk hauling. Call or text (587) 991-4620 for a free quote. Same-day service. Serving Edmonton, Sherwood Park, St. Albert, Spruce Grove & surrounding areas.",
   alternates: { canonical: 'https://jeffsjunkremoval.ca/contact/' },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import QuoteForm from '@/components/QuoteForm';
 
 export const metadata: Metadata = {
-  title: 'Free Quote - Junk Removal Edmonton',
+  title: 'Free Junk Removal Quote Edmonton | No Obligation Estimate',
   description:
-    "Get a free, no-obligation junk removal quote in Edmonton. Tell us what you need hauled away and we'll give you an honest price. Call (587) 991-4620 or fill out our form.",
+    "Get a free, no-obligation junk removal quote in Edmonton & area. Tell us what you need hauled away and we'll give you an honest price — usually within a few hours. Call or text (587) 991-4620 or fill out our online form.",
   alternates: { canonical: 'https://jeffsjunkremoval.ca/free-quote/' },
 };
 

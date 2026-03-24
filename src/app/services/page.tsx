@@ -3,9 +3,9 @@ import Link from 'next/link';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Junk Removal Services in Edmonton',
+  title: 'Junk Removal Services Edmonton | Furniture, Appliance & Cleanout Services',
   description:
-    'Full-service junk removal in Edmonton. Furniture, appliances, garage cleanouts, estate cleanouts, construction debris, hot tub removal & more. Call (587) 991-4620.',
+    'Full-service junk removal in Edmonton & area. Furniture removal, appliance hauling, garage cleanouts, basement cleanouts, estate cleanouts, construction debris, hot tub removal, yard waste & more. Same-day service. Call or text (587) 991-4620.',
   alternates: { canonical: 'https://jeffsjunkremoval.ca/services/' },
 };
 
@@ -108,9 +108,35 @@ const services: { title: string; slug: string; image?: string; description: stri
   },
 ];
 
+/* Structured data for each service */
+const servicesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: services.map((service, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Service',
+      name: service.title,
+      description: service.description,
+      url: `https://jeffsjunkremoval.ca/services/#${service.slug}`,
+      provider: {
+        '@type': 'LocalBusiness',
+        name: "Jeff's Junk Removal",
+        telephone: '+15879914620',
+        areaServed: { '@type': 'City', name: 'Edmonton' },
+      },
+    },
+  })),
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       {/* Page header */}
       <section className="bg-navy section-padding">
         <div className="container-narrow mx-auto text-center">
@@ -141,7 +167,7 @@ export default function ServicesPage() {
                   {service.image ? (
                     <img
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} in Edmonton, Alberta - Jeff's Junk Removal`}
                       className="w-full aspect-square object-cover rounded-xl shadow-md"
                     />
                   ) : (

@@ -3,41 +3,49 @@ import Link from 'next/link';
 const services = [
   {
     title: 'Junk Removal',
+    slug: 'junk-removal',
     description: 'General junk and clutter removal from homes, offices, and job sites.',
     icon: '🗑️',
   },
   {
     title: 'Furniture Removal',
+    slug: 'furniture-removal',
     description: 'Old couches, mattresses, desks, dressers — we haul it all.',
     icon: '🛋️',
   },
   {
     title: 'Appliance Removal',
+    slug: 'appliance-removal',
     description: 'Fridges, stoves, washers, dryers, and more. We handle the heavy stuff.',
     icon: '🏠',
   },
   {
     title: 'Garage & Basement Cleanouts',
+    slug: 'garage-cleanouts',
     description: 'Full cleanouts for garages, basements, and storage areas.',
     icon: '🏗️',
   },
   {
     title: 'Estate Cleanouts',
+    slug: 'estate-cleanouts',
     description: 'Compassionate and thorough property cleanouts for estates and downsizing.',
     icon: '🏡',
   },
   {
     title: 'Yard Waste Removal',
+    slug: 'yard-waste-removal',
     description: 'Branches, leaves, soil, and yard debris cleared quickly.',
     icon: '🌿',
   },
   {
     title: 'Construction Debris',
+    slug: 'construction-debris',
     description: 'Post-renovation and construction cleanup for contractors and homeowners.',
     icon: '🔨',
   },
   {
     title: 'Hot Tub & Deck Removal',
+    slug: 'hot-tub-removal',
     description: 'We dismantle and remove hot tubs, decks, sheds, and more.',
     icon: '♨️',
   },
@@ -49,7 +57,7 @@ export default function ServicesOverview() {
       <div className="container-narrow mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
-            What We Haul Away
+            Junk Removal Services in Edmonton
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             From a single item to a full property cleanout — no job is too big or small.
@@ -58,16 +66,17 @@ export default function ServicesOverview() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
-            <div
+            <Link
               key={service.title}
-              className="bg-white border border-gray-100 rounded-xl p-6 hover:border-accent/30 hover:shadow-md transition-all"
+              href={`/services/#${service.slug}`}
+              className="bg-white border border-gray-100 rounded-xl p-6 hover:border-accent/30 hover:shadow-md transition-all block"
             >
               <span className="text-3xl mb-3 block" role="img" aria-label={service.title}>
                 {service.icon}
               </span>
               <h3 className="text-lg font-bold text-navy mb-2">{service.title}</h3>
               <p className="text-gray-600 text-sm">{service.description}</p>
-            </div>
+            </Link>
           ))}
         </div>
 
