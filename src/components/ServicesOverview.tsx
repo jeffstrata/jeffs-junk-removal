@@ -85,7 +85,7 @@ const services = [
 
 export default function ServicesOverview() {
   return (
-    <section className="py-20 md:py-28 px-4 relative">
+    <section className="py-20 md:py-28 px-4 relative bg-white">
       <div className="container-narrow mx-auto">
         <div className="mb-16">
           <span className="section-label">What We Do</span>
